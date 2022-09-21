@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="style/choices.min.css">
+  <link rel="stylesheet" href="style/fonts.css">
+  <link rel="stylesheet" href="style/main_style.css">
+  <!-- <script defer src="script/validate.js"></script> -->
+
+  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script defer src="script/choices.min.js"></script>
+  <script defer src="script/inputmask.min.js"></script>
+  <script defer src="script/choices.js"></script>
+  <script defer src="script/just-validate.min.js"></script>
+  <script defer src="script/validate.js"></script>
+  <script defer src="script/tippy.js"></script>
+  <script defer src="script/maps.js"> </script>
+
+  </head>
+<body>
+
+    <div class="categories">
+      <h2 class="categories_maint-text">Категории:</h2>
+      <ul>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Динозавры<span class="span_k"></span></label></li>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Медведи<span class="span_k"></span></label></li>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Косули<span class="span_k"></span></label></li>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Лисы<span class="span_k"></span></label></li>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Волки<span class="span_k"></span></label></li>
+        <li class="categories_item"><label class="checkbox-text"><input type="checkbox" class="check" >Олени и лоси<span class="span_k"></span></label></li>
+      </ul>
+    </div>
+
+
+  <select name="model" id="model" class="select_div">
+    <option value="">Материал</option>
+    <option value="">Древесина</option>
+    <option value="">Металл</option>
+    <option value="">Камень</option>
+    <option value="">Пластик</option>
+    <option value="">Композитный</option>
+  </select>
+
+  <!-- <div class="tooltip"> -->
+    <!-- <div class="marker"></div> -->
+
+    <div class="main_text">
+      Следует отметить, что <nobr>социально-экономическое</nobr> развитие способствует повышению качества переосмысления <nobr>внешнеэкономических политик.</nobr>
+      <!-- <div class="marker"> </div>
+      <div class="popup">Глава 2, страница 176</div> -->
+      <button class="marker" id="myButton" tabindex="0">i</button>  
+    </div>
+  <!-- </div> -->
+
+
+
+ <div class="customSkroll" data-simplebar>
+  Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+
+</div>
+
+
+<div id="map" style="width: 600px; height: 400px"></div>
+
+
+
+  <div class="form-container">
+    <form action="" class="form">
+      <label class="label_form_list">
+      <input
+      class="form_list"
+      name="имя"
+      type="text"
+      placeholder="Имя"
+      data-validate-field="name"
+      >
+    </label>
+    <label class="label_form_list">
+      <input
+      class="form_list"
+      name="tel"
+      type="tel"
+      placeholder="Телефон"
+      data-validate-field="tel"
+      data-validate-rules="phone"
+      >
+    </label>
+    <label class="label_form_list">
+
+      <input
+      class="form_list"
+      name="email"
+      type="email"
+      placeholder="Email"
+      data-validate-field="mail"
+      input
+      >
+    </label>
+
+      <button class="btn">Заказать</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

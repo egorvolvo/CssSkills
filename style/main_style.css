@@ -1,0 +1,271 @@
+.check {
+  display: none;
+}
+/* .check + .span_k {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  border: 1px solid  #999999;
+  border-radius: 3px;
+  transition: opacity .9s ease-in-out;
+
+} */
+
+.check + span {
+position: absolute;
+top: 3px;
+left: 0;
+width: 15px;
+height: 15px;
+text-align: center;
+border: 1px solid #999999;
+border-radius: 3px;
+}
+.check:checked + span {
+border: 1px solid #CCB26E;
+}
+
+.check + span:before {
+position: absolute;
+top: 3px;
+right: 0;
+bottom: 0;
+left: 3px;
+width: 7.33px;
+height: 3.97px;
+box-sizing: border-box;
+content: '';
+border: 1px solid #CCB26E;
+border-top: none;
+border-right: none;
+opacity: 0;
+transform: rotate(-45deg);
+transition: opacity .3s ease-in-out;
+}
+
+.check:checked + span:before {
+opacity: 1;
+}
+
+
+.categories_item {
+  margin-bottom: 20px;
+  /* position: relative;  УБРАЛ */
+}
+.categories_maint-text {
+  margin-bottom: 20px;
+}
+
+.main_container {
+  margin-left: 100px;
+}
+
+.categories{
+  padding: 20px 30px 30px 30px;
+  border-radius: 10px;
+  border: 1px solid red;
+  display: inline-block;
+  margin-left: 300px;
+  /* position: absolute; */
+}
+
+.choices__list--dropdown .choices__item--selectable:after{
+  content: ""
+}
+
+
+ .select_div {
+  margin-bottom: 20px;
+     max-width: 195px;
+}
+
+
+.choices {
+  margin-top: 30px;
+  margin-left: 300px;
+  /* margin-left: 400px; */
+  width: 193px;
+}
+
+.choices__inner {
+  width: 193px ;
+  border-radius: 10px;
+  background-color: #fff;
+  min-height: auto;
+ }
+
+.is-open .choices__inner {
+  border-radius: 10px;
+  border: 1px solid #CCB26E;
+  background-color: #fff;
+  /* border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; */
+}
+
+.is-open .choices__list--dropdown {
+  border: 1px solid #CCB26E;
+  background-color: #fff;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #fff;
+}
+
+/* ТУЛТИП */
+.main_text{
+margin-bottom: 50px;
+margin-left: 300px;
+font-size: 14px;
+line-height: 170%;
+position:relative;
+top: 100%;
+left: 0;
+width: 375px;
+padding: 20px 95px 20px 30px;
+border: 1px solid black;
+background-color: #FFFFFF;
+color: rgba(51, 51, 51, 1);
+}
+
+.marker {
+  position: relative;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #bcbcbc;
+  color: white;
+}
+
+.marker:hover, .marker:focus {
+  background: #cbb468;
+}
+
+.tippy-box {
+  background-color: #666666;
+  padding: 7px 15px;
+  font-size: 12px;
+
+}
+
+.tippy-arrow::before {
+  color: #666666;
+}
+
+/* СКРОЛЛ */
+
+.customSkroll{
+  width: 330px;
+  height: 265px;
+  font-size: 14px;
+  line-height: 170%;
+  padding: 20px 0px 20px 30px;
+  font-style: normal;
+font-weight: normal;
+padding-right: 30px;
+margin-left: 300px;
+}
+
+
+
+.simplebar-scrollbar::before {
+  /* height: 70px; */
+  background: #CCB26E;
+}
+
+
+/* КАРТА */
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+#map {
+  margin-left: 300px;
+}
+
+
+.form-container {
+  max-width: 440px;
+  max-height: 510px;
+  margin-left: 300px;
+}
+
+.form {
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 38px 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.form_list{
+  margin-bottom: 31px;
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.btn {
+  background-color: #FF5C00;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 19px 53px;
+
+  /* order: 6; */
+  }
+
+  .label_form_list {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .js-validate-error-label{
+    position: absolute;
+    top: 0;
+  }
+
+  @media (min-width: 640px) {
+  .choices__list--dropdown .choices__item--selectable {
+      padding-right: 50px;
+  }
+}
+  /* .form_list:first-child{
+    order: 1;
+  }
+
+  .js-validate-error-label:first-child{
+    order: 0;
+  } */
+  /*
+  .js-validate-error-label:nth-child(2) {
+    order: 2;
+  }
+  .js-validate-error-label:nth-child(3){
+    order: 4;
+  }
+
+  .form_list:first-child{
+    order: 1;
+  }
+  .form_list:nth-child(2){
+    order: 3;
+  }
+  .form_list:nth-child(3){
+    order: 5;
+  } */
+

@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+
+  box-sizing: border-box;
+
+}
+body {
+  min-width: 320px;
+  background-color:   #FFFFFF;  /* под проект */
+  font-family: "Open Sans";  /* в "" свой шрифт под проект*/
+  font-size: 16px;
+  /* font-weight: 400; */
+  color: black;
+  line-height: 1;
+  width: 100%;
+}
+
+button, input {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+
+
+.container {
+  max-width: 1920px;  /*под проект/ ИЗМЕНИЛ*/
+  padding: 0 75px 0 75px;
+  margin: 0 auto;
+}
+
+.container:first-child {
+  max-width: 1920px;  /*под проект/ ИЗМЕНИЛ*/
+  padding: 0 75px 0 75px;
+  margin: 0 auto;
+}
+
+.container-footer{
+  padding: 0 77px 0 74px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 26px;
+}
+
+
